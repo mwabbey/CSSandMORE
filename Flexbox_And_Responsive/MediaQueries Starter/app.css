@@ -8,6 +8,9 @@ h1 {
 }
 nav {
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
 }
 
 ul,li {
@@ -16,5 +19,27 @@ ul,li {
     padding: 0;
 }
 
+ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
+@media (max-width: 768px) {
+   h1 {
+       font-size: 4em;
+   } 
+   nav, nav ul {
+       flex-direction: column;
+       align-items: center;
+   }
+
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
+    } 
+ }
